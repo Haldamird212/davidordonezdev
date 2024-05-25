@@ -11,29 +11,133 @@
     <title>David Ordóñez DEV</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>
             <a>
-                <img src="/assets/icon/DO.ico" alt="">
-                David Ordoñez Dev
+                <img class="header__logo" src="/assets/icon/DO.ico" alt="">
+                <p class="header__title">David Ordoñez Dev</p>
             </a>
         </h1>
-        <nav>
+        <nav class="nav-bar">
             <a href="">Home</a>
             <a href="">About me</a>
             <a href="">Portfolio</a>
             <a href="">Contact</a>
         </nav>
+        <nav class="nav-bar--menu">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#31afb4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+        </nav>
     </header>
-    <h2>About Me</h2>
-    <h2>Portfolio</h2>
-    <h2>Contac</h2>
+    <div class="hero container">
+        <div class="hero__text">
+            <h2 class="hero__presentation"> Hi! I'm <span>
+                David
+            </span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sunt. Nam quidem est in molestias, quam excepturi, corrupti ipsam ducimus ipsa praesentium commodi porro cupiditate.
+            </p>
+        </div>
+        <div class="hero__social">
+            <a href="">
+                <img src="/assets/icon/twitter.svg" alt="twitter">
+            </a>
+            <a href="">
+                <img src="/assets/icon/instagram.svg" alt="instagram">
+            </a>
+            <a href="">
+                <img src="/assets/icon/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="/assets/icon/github.svg" alt="github">s
+            </a>
+        </div>
+    </div>
+    <section class="portfolio container">
+        <h2><a class="title" href="">Portfolio</a></h2>
+        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda ipsa blanditiis natus aliquid quo fuga aut.</p>
+        <div class="projects__gallery">
+            <div class="project">
+                <p class="project__name">Super Mario Page</p>
+                <a href="https://super-mario-clone-page.vercel.app/">
+                    <img class="project__image" src="/assets/img/super-mario-page.png" alt="">
+                </a>
+                <div class="project__tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Javascript</span>
+                </div>
+                <p class="Project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex vero minus quas? Sed, debitis, autem iste accusantium sint fuga aut nulla soluta quia facilis voluptatem perspiciatis. Harum, quas iure.</p>
+            </div> <div class="project">
+                <p class="project__name">Cripto Currency Page</p>
+                <a href="https://cripto-change-psi.vercel.app/">
+                    <img class="project__image" src="/assets/img/batata-bit.png" alt="">
+                </a>
+                <div class="project__tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Javascript</span>
+                </div>
+                <p class="Project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex vero minus quas? Sed, debitis, autem iste accusantium sint fuga aut nulla soluta quia facilis voluptatem perspiciatis. Harum, quas iure.</p>
+            </div>
+            <div class="project">
+                <p class="project__name">Super Mario Page</p>
+                <a href="https://super-mario-clone-page.vercel.app/">
+                    <img class="project__image" src="/assets/img/super-mario-page.png" alt="">
+                </a>
+                <div class="project__tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Javascript</span>
+                </div>
+                <p class="Project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex vero minus quas? Sed, debitis, autem iste accusantium sint fuga aut nulla soluta quia facilis voluptatem perspiciatis. Harum, quas iure.</p>
+            </div>
+            <div class="project">
+                <p class="project__name">Super Mario Page</p>
+                <a href="https://super-mario-clone-page.vercel.app/">
+                    <img class="project__image" src="/assets/img/super-mario-page.png" alt="">
+                </a>
+                <div class="project__tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Javascript</span>
+                </div>
+                <p class="Project__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex vero minus quas? Sed, debitis, autem iste accusantium sint fuga aut nulla soluta quia facilis voluptatem perspiciatis. Harum, quas iure.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact container">
+        <h2 class="title">Contact</h2>
+        <form action="">
+            <label for=""></label>
+        </form>
+    </section>
 
     <footer>
-        <div>
-
+        <div class="footer">
+            <div class="footer__content">
+                <h3 class="footer__title">Social media</h3>
+                <a href="">GitHub</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+                <a href="">X</a>
+            </div>
+            <div class="footer__content">
+                <h3></h3>
+                <a href="">Projects</a>
+                <a href="">About me</a>
+                <a href="">Contact</a>
+            </div>
         </div>
-        <div>
+        <div class="rights">
             <p>Made by David Ordoñez. All rights reserved</p>
         </div>
     </footer>
