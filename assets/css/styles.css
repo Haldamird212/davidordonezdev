@@ -145,6 +145,8 @@ body{
     font-size: 4.4rem;
     font-weight: 500;
     margin-bottom: 2rem;
+    display: flex;
+    align-self: center;
 }
 
 .hero__presentation span{
