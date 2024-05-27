@@ -60,15 +60,26 @@ body{
 }
 
 /* HEADER */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15rem;
+    height: 10rem;
+    background-color: rgba(20, 33, 45, .6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(1.8rem);
 }
 
 .header__logo{
-    height: 15rem;
+    height: 8rem;
     margin: 2rem;
 
 }
@@ -121,14 +132,16 @@ body{
 
 /* HERO */
 .hero{
-    height: calc(100vh - 6.2rem);
-    padding: 4rem 1.2rem;
+    height: 100vh;
+    padding: 14rem 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width: 1025px){
     .hero{
         display: grid;
-        grid-template-columns: 3fr 4fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -141,12 +154,17 @@ body{
     }
 }
 
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 2.4rem;
+}
+
 .hero__presentation{
     font-size: 4.4rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    display: flex;
-    align-self: center;
 }
 
 .hero__presentation span{
@@ -155,7 +173,7 @@ body{
 }
 
 .hero p{
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
     font-size: 2.8rem;
 }
 
@@ -165,7 +183,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 3.2rem;
+    margin: 12rem auto
 }
 
 .hero__social a{
@@ -174,8 +192,15 @@ body{
 }
 
 .hero__social img{
-    height: 12rem;
+    height: 8rem;
 }
+
+@media (min-width:1025px){
+    .hero__social img{
+        height: 12rem;
+    }
+}
+
 /* END HERO */
 
 /* PROJECTS SECTION */
